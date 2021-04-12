@@ -2,6 +2,7 @@
         import '../widget/nav-drawer.dart';
         import 'helppage.dart';
         import 'viewhelperpage.dart';
+        import 'communication.dart';
 
         class NewrequestWidget extends StatefulWidget {
         @override
@@ -107,7 +108,7 @@
                                 onPressed: () {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => HelpsWidget()),);
+                                    MaterialPageRoute(builder: (context) => CommunicationWidget()),);
                                               },//button
                                       )
                                     ),           

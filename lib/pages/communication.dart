@@ -33,9 +33,12 @@ class CommunicationWidget extends StatelessWidget {
                   Container(
                     width: 51,
                     height: 51,
+                    child: new Image.asset('assets/helper/helper1.png'),
+                    alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Color.fromRGBO(196, 196, 196, 1),
                       shape: BoxShape.circle,
+                      
                     ),
                   ),
                   Container(

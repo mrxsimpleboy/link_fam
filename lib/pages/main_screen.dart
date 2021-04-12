@@ -69,7 +69,7 @@
                           ),Positioned(
                             top: 32,
                             left: 59,
-                            child: Text('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', textAlign: TextAlign.center, style: TextStyle(
+                            child: Text('Helper Timetable', textAlign: TextAlign.center, style: TextStyle(
                             color: Color.fromRGBO(52, 59, 59, 1),
                             fontFamily: 'Roboto',
                             fontSize: 12,

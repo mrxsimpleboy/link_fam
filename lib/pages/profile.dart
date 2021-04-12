@@ -58,7 +58,7 @@ class ProfileWidget extends StatelessWidget {
                                   ),
                 image : DecorationImage(
                     image: AssetImage('assets/images/login/Ellipse1.png'),
-                    fit: BoxFit.contain),
+                    fit: BoxFit.fill),
                     borderRadius : BorderRadius.all(Radius.elliptical(89, 83)),
                     )
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import '../widget/nav-drawer.dart';
 import '../component/messagebox.dart';
 
@@ -76,6 +77,28 @@ class _ChatWidgetState extends State<ChatWidget> {
       body: Container(
         child: Column(
           children: <Widget>[
+            
+            SizedBox(
+              width: MediaQuery.of(context).size.width*0.98,
+              height: MediaQuery.of(context).size.height*0.1,
+                  child: Row(
+                    children:<Widget>[
+                      Icon(CupertinoIcons.person_crop_circle ),
+                      Text(
+                        "    Hi there, Welcome To helper assisant",
+                        //,\n we're happy to help with dosmetic service",
+                        style: TextStyle(
+                          color: Color(
+                            0xff4a5251,
+                          ),
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Roboto",
+                        ),
+                      ),      
+                    ]
+                  )
+            ),
+                  
             
             //card,
             Expanded(

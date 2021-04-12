@@ -332,7 +332,7 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),Positioned(
                                     top: 14,
                                     left: 3,
-                                    child: Text('OfficialAccount', textAlign: TextAlign.left, style: TextStyle(
+                                    child: Text('Official\nAccount', textAlign: TextAlign.left, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',
                                     fontSize: 14,

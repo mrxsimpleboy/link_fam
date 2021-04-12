@@ -37,21 +37,21 @@ class ViewHelpsWidget extends StatelessWidget {
                                 image: 'mom1',
                                 title: "Mary Helper",
                                 description:
-                                    "have 1 year experience, take care baby",
+                                    "have 1 year experience, take care baby\n 50 meter",
                               ),
                               makePage(
                                 page: 2,
                                 image: 'mom2',
                                 title: "Ann Helper",
                                 description:
-                                    "new helper, with heart care",
+                                    "new helper, with heart care\n 200 meter",
                               ),
                               makePage(
                                 page: 3,
                                 image: 'mom3',
                                 title: "jone Helper",
                                 description:
-                                    "Nice and free to help",
+                                    "Nice and free to help\n 1000 meter",
                               )
                             ],
                           ),
