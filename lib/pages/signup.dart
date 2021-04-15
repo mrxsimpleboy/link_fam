@@ -12,25 +12,23 @@ class SignupPage extends StatelessWidget {
           title: Text('link_fam.'),
           backgroundColor: Color.fromRGBO(234, 218, 209, 1.0),
       ),
+      resizeToAvoidBottomInset: false, 
       body:
       Container(
           width: MediaQuery.of(context).size.width*0.98,
           height: MediaQuery.of(context).size.height*0.98,
           child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
       
                   TextField(
                     decoration: InputDecoration(
                       icon: Icon(Icons.person),
-                      //hasFloatingPlaceholder: false,
                       labelText: "Name",
                       helperText: "",
                       errorText: "",
-                    // hintText: "hintText",
-                      // prefixIcon: Icon(Icons.perm_identity),
-                      // prefixText: "prefix",
+                    
                     ),
                   ),
                   TextField(
