@@ -14,3 +14,21 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Notification
+
+We provide a public account to sign in our app.
+Email: hack@ust.hk
+Password: test1234
+
+This project currently only supports Android. 
+
+The Android apk file is in the directory './install/link_fam.apk'.
+
+You can directly install the application to your Android phone, or use Android emulator under flutter environment.
+
+## Credit
+
+The backend of the application is based on Firebase Authentication and Firestore service.
+
+The project is based on Flutter, written with dart.
