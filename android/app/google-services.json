@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20532379238",
+    "project_id": "link-fam",
+    "storage_bucket": "link-fam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20532379238:android:b8d3270f4110be8bc777a7",
+        "android_client_info": {
+          "package_name": "com.example.link_fam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20532379238-tofpmmsaafcr8v6id20m3g1q6g2ltgq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoFBEFR1s0tNYFjFsp3oCZb_XBd6xafRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20532379238-tofpmmsaafcr8v6id20m3g1q6g2ltgq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
