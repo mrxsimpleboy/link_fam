@@ -18,8 +18,10 @@ samples, guidance on mobile development, and a full API reference.
 ## Notification
 
 We provide a public account to sign in our app.
+<h4>
 Email: hack@ust.hk
 Password: test1234
+</h4>
 
 This project currently only supports Android. 
 
