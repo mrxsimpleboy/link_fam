@@ -69,7 +69,7 @@
                           ),Positioned(
                             top: 32,
                             left: 59,
-                            child: Text('Helper Timetable', textAlign: TextAlign.center, style: TextStyle(
+                            child: Text('Helper TimeTable', textAlign: TextAlign.center, style: TextStyle(
                             color: Color.fromRGBO(52, 59, 59, 1),
                             fontFamily: 'Roboto',
                             fontSize: 12,
@@ -80,7 +80,7 @@
                           ),Positioned(
                             top: 52,
                             left: 232,
-                            child: Text('UserName', textAlign: TextAlign.center, style: TextStyle(
+                            child: Text('', textAlign: TextAlign.center, style: TextStyle(
                             color: Color.fromRGBO(52, 59, 59, 1),
                             fontFamily: 'Roboto',
                             fontSize: 11,

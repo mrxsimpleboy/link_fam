@@ -35,6 +35,7 @@ class _LoginInputPageState extends State<LoginInputPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       TextFormField(
+                        //initialValue: "hack@ust.hk",
                         decoration: InputDecoration(
                           icon: Icon(Icons.person),
                           //hasFloatingPlaceholder: false,
@@ -53,6 +54,7 @@ class _LoginInputPageState extends State<LoginInputPage> {
                         },
                       ),
                       TextFormField(
+                        //initialValue:"test1234",
                         obscureText: true,
                         decoration: InputDecoration(
                           icon: Icon(Icons.text_fields_outlined),

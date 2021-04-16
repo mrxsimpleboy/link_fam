@@ -143,7 +143,7 @@ class CommunitysearchWidget extends StatelessWidget {
                                     left: 64.95697021484375,
                                     child: Transform.rotate(
                                     angle: 0.1911339363142767 * (math.pi / 180),
-                                    child: Text('xx', textAlign: TextAlign.left, style: TextStyle(
+                                    child: Text('helper', textAlign: TextAlign.left, style: TextStyle(
                                     color: Color.fromRGBO(74, 82, 81, 1),
                                     fontFamily: 'Roboto',
                                     fontSize: 18,
@@ -203,8 +203,8 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),)
                                   ),Positioned(
                                     top: 15,
-                                    left: 88.64611053466797,
-                                    child: Text('XXXXXX', textAlign: TextAlign.center, style: TextStyle(
+                                    left: 88,
+                                    child: Text('Eduction- piano teaching', textAlign: TextAlign.center, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',
                                     fontSize: 14,
@@ -214,8 +214,8 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),)
                                   ),Positioned(
                                     top: 27,
-                                    left: 102.20375061035156,
-                                    child: Text('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ...', 
+                                    left: 88,
+                                    child: Text('I know how to play piano, violin, viola, cello.\nI have also been an orchestra chief \nand played musical instruments.', 
                                     textAlign: TextAlign.left, style: TextStyle(
                                     color: Color.fromRGBO(74, 82, 81, 1),
                                     fontFamily: 'Roboto',
@@ -272,8 +272,8 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),)
                                   ),Positioned(
                                     top: 15,
-                                    left: 88.64611053466797,
-                                    child: Text('XXXXXX', textAlign: TextAlign.center, style: TextStyle(
+                                    left: 88,
+                                    child: Text('cosmetic helper', textAlign: TextAlign.center, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',
                                     fontSize: 14,
@@ -283,8 +283,8 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),)
                                   ),Positioned(
                                     top: 27,
-                                    left: 102.20375061035156,
-                                    child: Text('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ...',
+                                    left: 88,
+                                    child: Text('we look for someone who is caring \nand loves to play with kids',
                                     textAlign: TextAlign.left, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',
@@ -343,7 +343,7 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),Positioned(
                                     top: 15,
                                     left: 88,
-                                    child: Text('XXXXXX', textAlign: TextAlign.center, style: TextStyle(
+                                    child: Text('entrepreneurship', textAlign: TextAlign.center, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',
                                     fontSize: 14,
@@ -353,8 +353,8 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),)
                                   ),Positioned(
                                     top: 27,
-                                    left: 102,
-                                    child: Text('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ...', 
+                                    left: 88,
+                                    child: Text('Co-marketing with other startups is a great', 
                                     textAlign: TextAlign.left, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',

@@ -100,14 +100,16 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             fit: BoxFit.contain),
                                       )),
                                 ]),
+                            SizedBox(height: 20),
                             Row(
                                 // mainAxisAlignment: MainAxisAlignment.start,
                                 //crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
+                                  Text('Requestor Lv 2',
+                                        textAlign: TextAlign.right),
                                   Container(
                                       child: Stack(children: <Widget>[
-                                    Text('Requestor Lv 2',
-                                        textAlign: TextAlign.right),
+                                    
                                     CustomPaint(
                                         foregroundPainter: LinePainter(
                                             Offset(_offsetwidth * 0.1, 0),
@@ -124,10 +126,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                 // mainAxisAlignment: MainAxisAlignment.start,
                                 //crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
+                                  Text('Helper       Lv 2',
+                                        textAlign: TextAlign.right),
                                   Container(
                                       child: Stack(children: <Widget>[
-                                    Text('Helper Lv 2',
-                                        textAlign: TextAlign.right),
+                                    
                                     CustomPaint(
                                         foregroundPainter: LinePainter(
                                             Offset(_offsetwidth * 0.1, 0),
@@ -140,6 +143,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             Colors.grey)),
                                   ])),
                                 ]),
+                            SizedBox(height: 20),
                             Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -151,14 +155,20 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                 Icon(Icons.star, color: Colors.grey),
                               ],
                             ),
-                            Column(
+                            SizedBox(height: 20),
+                            //Container(
+                              //width: MediaQuery.of(context).size.width*0.8,
+                              //child:Column(
+                              Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Text('Name:', textAlign: TextAlign.left),
+                                  
+                                  Text('Name:', textAlign: TextAlign.start),
                                   Text('${userData.name}'),
                                   SizedBox(height: 10),
                                   Text('Home address:',
-                                      textAlign: TextAlign.left),
+                                      textAlign: TextAlign.start),
                                   Text('${userData.userAddress}'),
                                   SizedBox(height: 10),
                                   Text('Contact Number:',
@@ -177,8 +187,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       textAlign: TextAlign.left),
                                   Text('${userData.idCardNumber}'),
                                 ]),
-                            //   ]
-                            // ),
+                            //),
+                            
+                            SizedBox(height: 10),
                             ButtonTheme(
                                 child: ElevatedButton(
                               child:
@@ -210,6 +221,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     });
                               },
                             )),
+                            SizedBox(height: 10),
                             ButtonTheme(
                                 minWidth:
                                     MediaQuery.of(context).size.width * 0.5,

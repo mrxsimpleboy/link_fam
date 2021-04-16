@@ -108,7 +108,7 @@
                                 onPressed: () {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => CommunicationWidget()),);
+                                    MaterialPageRoute(builder: (context) => HelpsWidget()),);
                                               },//button
                                       )
                                     ),           
