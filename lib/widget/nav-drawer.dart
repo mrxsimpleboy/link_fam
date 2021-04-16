@@ -1,9 +1,17 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:practice_carousel/services/auth.dart';
 import '../pages/login.dart';
 import '../pages/profile.dart';
 import '../pages/signup.dart';
 
-class NavDrawer extends StatelessWidget {
+class NavDrawer extends StatefulWidget {
+  @override
+  _NavDrawerState createState() => _NavDrawerState();
+}
+
+class _NavDrawerState extends State<NavDrawer> {
+  final _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -24,20 +32,64 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.input),
             title: Text('Welcome'),
-            onTap: () => {
-              Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => LoginpageWidget()))
+            onTap: () async {
+              return showDialog<void>(
+                context: context,
+                barrierDismissible: false, // user must tap button!
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Exit Warning'),
+                    content: SingleChildScrollView(
+                      child: ListBody(
+                        children: <Widget>[
+                          Text(
+                              'This action would sign out your current account, are you sure to do this?'),
+                        ],
+                      ),
+                    ),
+                    actions: <Widget>[
+                      TextButton(
+                        child: Text('Yes'),
+                        onPressed: () async {
+                          try {
+                            String user = _auth.currentUser.uid;
+                            await AuthService().signOut();
+                            print('user $user logout');
+                          } catch (e) {
+                            print(e.toString());
+                          }
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => LoginpageWidget()));
+                        },
+                      ),
+                      TextButton(
+                        child: Text('Cancel'),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                    ],
+                  );
+                },
+              );
             },
-
           ),
           ListTile(
             leading: Icon(Icons.verified_user),
             title: Text('Profile'),
             onTap: () => {
-              Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ProfileWidget()))
+              if (_auth.currentUser != null)
+                {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ProfileWidget();
+                  })),
+                }
+              else
+                {
+                  Navigator.of(context).pop(),
+                }
             },
           ),
           ListTile(
@@ -48,15 +100,64 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.border_color),
             title: Text('Signup'),
-            onTap: () => {
-              Navigator.push(context,
-              MaterialPageRoute(builder: (context) => SignupPage()))
+            onTap: () async {
+              return showDialog<void>(
+                context: context,
+                barrierDismissible: false, // user must tap button!
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Signup Warning'),
+                    content: SingleChildScrollView(
+                      child: ListBody(
+                        children: <Widget>[
+                          Text(
+                              'This action would sign out your current account, are you sure to do this?'),
+                        ],
+                      ),
+                    ),
+                    actions: <Widget>[
+                      TextButton(
+                        child: Text('Yes'),
+                        onPressed: () async {
+                          try {
+                            String user = _auth.currentUser.uid;
+                            await AuthService().signOut();
+                            print('user $user logout');
+                          } catch (e) {
+                            print(e.toString());
+                          }
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignupPage()));
+                        },
+                      ),
+                      TextButton(
+                        child: Text('Cancel'),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                    ],
+                  );
+                },
+              );
             },
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () async {
+              try {
+                String user = _auth.currentUser.uid;
+                await AuthService().signOut();
+                print('user $user logout');
+              } catch (e) {
+                print(e.toString());
+              }
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LoginpageWidget()));
+            },
           ),
         ],
       ),
